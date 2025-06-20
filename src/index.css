@@ -18,22 +18,39 @@
 .container{
     width: 80%;
     margin: auto;
-    background-color: aqua;
 }
 header{
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 2rem 0rem;
 }
 ul{
     list-style: none;
 }
 .pokemon-images{
     width: 8rem;
-    height: 2rem;
+    height: 8rem;
 }
 
-
-
+figure{
+  display: flex;
+  justify-content: center;
+}
+.pokemon-name{
+  text-align: center;
+  margin-top: 1rem;
+}
+.pokemon-secrch{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+input{
+  padding: 0.5rem ;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
 /* card design  */
 
 
@@ -44,44 +61,50 @@ ul{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+  padding: 1.25rem;
 }
 
 .pokemon-card:hover {
   transform: translateY(-5px);
 }
 
-.pokemon-card img {
-  width: 100%;
-  height: auto;
+
+
+.p1 {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    text-transform: capitalize; 
+    margin: 1rem auto;
 }
 
-.card-content {
-  padding: 20px;
+.p1:hover {
+    background-color: #388E3C;
+    cursor: pointer;
+}
+.pokemon-highlight{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* three flex elements  */
+.three-flex{
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
   text-align: center;
 }
-
-.card-content h2 {
-  font-size: 1.5rem;
-  color: #333;
+.details_wrapper{
+  margin-top: 1rem;
 }
-
-.card-content p {
-  color: #666;
-  font-size: 1rem;
-  margin: 10px 0;
-}
-
-.card-content button {
-  padding: 10px 20px;
-  background-color: #ffcb05;
-  color: #2a75bb;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.card-content button:hover {
-  background-color: #f5b700;
+span{
+  font-weight: bold; 
 }

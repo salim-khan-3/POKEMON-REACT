@@ -9,7 +9,7 @@ export const PokemonCards = ({pokemonData}) =>{
 
             <h1 className="pokemon-name">{pokemonData.name}</h1>
             <div className="pokemon-info pokemon-highlight">
-                <p>
+                <p className="p1">
                     {
                         pokemonData.types.map((curType)=>curType.type.name).join(", ")
                     }
@@ -25,11 +25,11 @@ export const PokemonCards = ({pokemonData}) =>{
                     <span>Weight:</span> {pokemonData.weight}
                 </p>
                 <p className="pokemon-info">
-                    <span>Speed:</span> {pokemonData.stats[5].base_stat}
+                    <span>Speed:</span> {pokemonData.stats[1].base_stat}
                 </p>
             </div>
 
-            <div className="three-flex">
+            <div className="three-flex details_wrapper">
                 <div className="pokemon-info">
                     <p>{pokemonData.base_experience}</p>
                     <span>Experience:</span>
